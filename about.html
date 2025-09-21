@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Violet Keystone - About</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+<!-- Navbar -->
+<header class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold tracking-wide">Violet Keystone</h1>
+
+    <!-- Hamburger button (mobile only) -->
+    <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none z-50">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="hover:text-pink-400 transition">Home</a>
+      <a href="about.html" class="hover:text-pink-400 transition">About</a>
+      <a href="shop.html" class="hover:text-pink-400 transition">Shop</a>
+      <a href="privacy.html" class="hover:text-pink-400 transition">Privacy</a>
+    </nav>
+  </div>
+
+  <!-- Fullscreen Navigation Menu (mobile only) -->
+  <nav id="menu" class="hidden fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center space-y-8 text-2xl font-semibold z-40 transition duration-300 md:hidden">
+    <a href="index.html" class="hover:text-pink-400 transition">Home</a>
+    <a href="about.html" class="hover:text-pink-400 transition">About</a>
+    <a href="shop.html" class="hover:text-pink-400 transition">Shop</a>
+    <a href="privacy.html" class="hover:text-pink-400 transition">Privacy</a>
+  </nav>
+</header>
+
+<!-- About Section -->
+<main class="max-w-6xl mx-auto py-16 px-6">
+  <h2 class="text-4xl font-bold mb-10 text-center text-gray-800">About Us</h2>
+
+  <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+    <div>
+      <p class="mb-4 text-lg leading-relaxed">
+        At <span class="font-semibold text-purple-600">Violet Keystone</span>, we are passionate about blending science, design, and technology 
+        to help parents organize their daily lives. Our app is designed with simplicity, beauty, and practicality in mind. 
+      </p>
+      <p class="mb-4 text-lg leading-relaxed">
+        With years of scientific discovery behind our platform, we aim to create a sense of mystery while 
+        remaining approachable and user-friendly. We believe that everyday tools can be both functional and inspiring.
+      </p>
+    </div>
+    <div>
+      <img src="img/keystone.png" alt="About Violet Keystone" class="rounded-xl shadow-lg">
+    </div>
+  </div>
+
+  <!-- Vision & Mission -->
+  <section class="mb-16">
+    <h3 class="text-2xl font-bold mb-6 text-center">Our Vision & Mission</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+        <img src="img/vision.png" alt="Vision" class="mx-auto mb-4 rounded-lg">
+        <h4 class="text-xl font-semibold mb-2">Vision</h4>
+        <p class="text-gray-600">To inspire families around the world to live more organized and fulfilling lives, empowered by science and design.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+        <img src="img/mission.png" alt="Mission" class="mx-auto mb-4 rounded-lg">
+        <h4 class="text-xl font-semibold mb-2">Mission</h4>
+        <p class="text-gray-600">To create innovative digital tools that simplify daily routines, bringing beauty and ease to every interaction.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+        <img src="img/values.png" alt="Values" class="mx-auto mb-4 rounded-lg">
+        <h4 class="text-xl font-semibold mb-2">Values</h4>
+        <p class="text-gray-600">We value innovation, approachability, and design excellence, always placing families at the heart of what we do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section>
+    <h3 class="text-2xl font-bold mb-6 text-center">Our Dedicated Team</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-gray-100 rounded-xl p-6 hover:shadow-lg transition">
+        <img src="img/jane.png" alt="Jane Doe" class="mx-auto mb-4 rounded-full border-4 border-purple-400">
+        <h4 class="text-lg font-semibold">Jane Doe</h4>
+        <p class="text-gray-600">Founder & CEO</p>
+      </div>
+      <div class="bg-gray-100 rounded-xl p-6 hover:shadow-lg transition">
+        <img src="img/john.png" alt="John Smith" class="mx-auto mb-4 rounded-full border-4 border-pink-400">
+        <h4 class="text-lg font-semibold">John Smith</h4>
+        <p class="text-gray-600">Lead Designer</p>
+      </div>
+      <div class="bg-gray-100 rounded-xl p-6 hover:shadow-lg transition">
+        <img src="img/emily.png" alt="Emily Brown" class="mx-auto mb-4 rounded-full border-4 border-red-400">
+        <h4 class="text-lg font-semibold">Emily Brown</h4>
+        <p class="text-gray-600">Product Manager</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-gray-900 text-white text-center p-6 mt-12">
+  <p>&copy; 2025 Violet Keystone. All rights reserved.</p>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

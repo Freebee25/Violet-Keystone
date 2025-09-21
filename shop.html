@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Violet Keystone - Shop</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+<!-- Navbar -->
+<header class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold tracking-wide">Violet Keystone</h1>
+
+    <!-- Hamburger button (mobile only) -->
+    <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none z-50">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="hover:text-pink-400 transition">Home</a>
+      <a href="about.html" class="hover:text-pink-400 transition">About</a>
+      <a href="shop.html" class="hover:text-pink-400 transition">Shop</a>
+      <a href="privacy.html" class="hover:text-pink-400 transition">Privacy</a>
+    </nav>
+  </div>
+
+  <!-- Fullscreen Navigation Menu (mobile only) -->
+  <nav id="menu" class="hidden fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center space-y-8 text-2xl font-semibold z-40 transition duration-300 md:hidden">
+    <a href="index.html" class="hover:text-pink-400 transition">Home</a>
+    <a href="about.html" class="hover:text-pink-400 transition">About</a>
+    <a href="shop.html" class="hover:text-pink-400 transition">Shop</a>
+    <a href="privacy.html" class="hover:text-pink-400 transition">Privacy</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-purple-700 via-pink-600 to-red-500 text-white py-16 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">Shop Violet Keystone</h2>
+    <p class="text-lg md:text-xl mb-8">Discover our beautifully designed app that helps parents manage appointments effortlessly, blending science and simplicity.</p>
+    <!-- <img src="img/app-mockup.png" alt="App Mockup" class="mx-auto w-64 md:w-80 shadow-2xl rounded-xl"> -->
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="max-w-6xl mx-auto py-16 px-6">
+  <h3 class="text-3xl font-bold text-center mb-10">Why Choose Our App?</h3>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <i class="fas fa-calendar-check text-purple-600 text-4xl mb-4"></i>
+      <h4 class="text-xl font-semibold mb-2">Smart Scheduling</h4>
+      <p class="text-gray-600">Easily organize appointments and never miss an important event again.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <i class="fas fa-child text-pink-500 text-4xl mb-4"></i>
+      <h4 class="text-xl font-semibold mb-2">Family-Friendly</h4>
+      <p class="text-gray-600">Designed especially for parents, intuitive and simple to use for all ages.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition">
+      <i class="fas fa-magic text-red-500 text-4xl mb-4"></i>
+      <h4 class="text-xl font-semibold mb-2">Beautiful Design</h4>
+      <p class="text-gray-600">Experience a mysterious yet approachable design that inspires daily use.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Product Section -->
+<main class="max-w-6xl mx-auto py-12 px-6">
+    <h3 class="text-3xl font-bold mb-10 text-center">Our Product</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+  
+      <!-- Product Card 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition">
+        <img src="img/product-app.png" alt="Parent Organizer App" class="mx-auto mb-4 rounded-lg">
+        <h4 class="font-semibold text-xl mb-2">Parent Organizer App</h4>
+        <p class="text-gray-600 mb-4">Our flagship app that helps parents manage appointments effortlessly, backed by years of science and design expertise.</p>
+        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Buy Now</button>
+      </div>
+  
+      <!-- Product Card 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition">
+        <img src="img/product-calendar.png" alt="Family Calendar" class="mx-auto mb-4 rounded-lg">
+        <h4 class="font-semibold text-xl mb-2">Family Calendar</h4>
+        <p class="text-gray-600 mb-4">A beautifully designed shared calendar that syncs across devices, helping families stay connected and organized.</p>
+        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Buy Now</button>
+      </div>
+  
+      <!-- Product Card 3 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition">
+        <img src="img/product-reminder.png" alt="Smart Reminder" class="mx-auto mb-4 rounded-lg">
+        <h4 class="font-semibold text-xl mb-2">Smart Reminder</h4>
+        <p class="text-gray-600 mb-4">AI-powered reminder tool that adapts to your lifestyle, ensuring you never miss an important event or deadline.</p>
+        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Buy Now</button>
+      </div>
+  
+    </div>
+  </main>
+  
+
+<!-- Testimonial Section -->
+<section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">What People Say</h3>
+  
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+  
+          <!-- Parent Testimonial 1 -->
+<div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Parent" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">Sarah Johnson</h4>
+        <p class="text-sm text-gray-500">Mother of two</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"Violet Keystone has truly simplified our family life. I can easily track all appointments and feel more relaxed every day."</p>
+  </div>
+  
+  <!-- Teen Testimonial 1 -->
+  <div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Teen" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">Daniel Kim</h4>
+        <p class="text-sm text-gray-500">High School Student</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"Using this app makes it fun to stay organized. The design is super cool and easy to use!"</p>
+  </div>
+  
+  <!-- Parent Testimonial 2 -->
+  <div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Parent" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">Michael Lee</h4>
+        <p class="text-sm text-gray-500">Father of three</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"Managing multiple kids’ schedules used to be chaotic. With Violet Keystone, everything is organized and I never miss an important moment."</p>
+  </div>
+  
+  <!-- Teen Testimonial 2 -->
+  <div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Teen" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">Emily Carter</h4>
+        <p class="text-sm text-gray-500">College Student</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"I love how easy it is to sync my personal and family events. The colorful design makes it fun to use every day!"</p>
+  </div>
+  
+  <!-- Parent Testimonial 3 -->
+  <div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Parent" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">Laura Martinez</h4>
+        <p class="text-sm text-gray-500">Single Mother</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"Balancing work and parenting is tough, but this app gives me peace of mind and keeps everything under control."</p>
+  </div>
+  
+  <!-- Teen Testimonial 3 -->
+  <div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Teen" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">Kevin Brown</h4>
+        <p class="text-sm text-gray-500">University Student</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"The reminders help me stay on top of classes and family commitments. A must-have app for busy students."</p>
+  </div>
+  
+  <!-- Parent Testimonial 4 -->
+  <div class="swiper-slide bg-white shadow-md rounded-xl p-8 text-left">
+    <div class="flex items-center mb-4">
+      <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Parent" class="w-16 h-16 rounded-full mr-4 shadow">
+      <div>
+        <h4 class="text-lg font-semibold">James Wilson</h4>
+        <p class="text-sm text-gray-500">Father & Professional</p>
+        <div class="flex text-yellow-400 mt-1">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray-700 italic">"I can balance my work schedule and family life seamlessly now. Violet Keystone is a game changer for parents."</p>
+  </div>
+  
+  
+        </div>
+  
+        <!-- Swiper Pagination & Nav -->
+        <div class="swiper-pagination mt-6"></div>
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 }
+      }
+    });
+  </script>
+  
+
+<footer class="bg-gray-900 text-white text-center p-6 mt-12">
+  <p>&copy; 2025 Violet Keystone. All rights reserved.</p>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

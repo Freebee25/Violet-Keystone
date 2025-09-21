@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Violet Keystone - Home</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+<!-- Navbar -->
+<header class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold tracking-wide">Violet Keystone</h1>
+  
+      <!-- Hamburger button (mobile only) -->
+      <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none z-50">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 text-lg font-medium">
+        <a href="index.html" class="hover:text-pink-400 transition">Home</a>
+        <a href="about.html" class="hover:text-pink-400 transition">About</a>
+        <a href="shop.html" class="hover:text-pink-400 transition">Shop</a>
+        <a href="privacy.html" class="hover:text-pink-400 transition">Privacy</a>
+      </nav>
+    </div>
+  
+    <!-- Fullscreen Navigation Menu (mobile only) -->
+    <nav id="menu" class="hidden fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center space-y-8 text-2xl font-semibold z-40 transition duration-300 md:hidden">
+      <a href="index.html" class="hover:text-pink-400 transition">Home</a>
+      <a href="about.html" class="hover:text-pink-400 transition">About</a>
+      <a href="shop.html" class="hover:text-pink-400 transition">Shop</a>
+      <a href="privacy.html" class="hover:text-pink-400 transition">Privacy</a>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-r from-purple-600 via-pink-500 to-red-400 text-white py-20 px-6 text-center">
+  <div class="max-w-3xl mx-auto animate-fadeIn">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">Inspiring New Ways to Keep Track</h2>
+    <p class="text-lg mb-8 leading-relaxed">Combining innovative software with beautiful design, Violet Keystone helps parents manage their appointments with ease and style.</p>
+    <button onclick="orderSample()" class="bg-white text-gray-800 px-8 py-3 rounded-full shadow-lg font-semibold hover:bg-gray-200 transition-transform transform hover:scale-105">🎁 Order Free Sample</button>
+  </div>
+  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</section>
+
+
+<!-- About the Team -->
+<section class="py-16 bg-gray-100 px-6">
+  <h3 class="text-3xl font-bold text-center mb-12 text-gray-700">Meet Our Team</h3>
+  <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
+      <img src="img/jane.png" alt="Team Member" class="mx-auto rounded-full mb-4 border-4 border-pink-400">
+      <h4 class="text-xl font-semibold">Jane Doe</h4>
+      <p class="text-sm text-gray-600">Founder & CEO</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
+      <img src="img/john.png" alt="Team Member" class="mx-auto rounded-full mb-4 border-4 border-purple-400">
+      <h4 class="text-xl font-semibold">John Smith</h4>
+      <p class="text-sm text-gray-600">Lead Designer</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
+      <img src="img/emily.png" alt="Team Member" class="mx-auto rounded-full mb-4 border-4 border-red-400">
+      <h4 class="text-xl font-semibold">Emily Brown</h4>
+      <p class="text-sm text-gray-600">Product Manager</p>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-gradient-to-r from-pink-500 to-purple-600 text-white text-center py-16">
+  <h3 class="text-2xl md:text-3xl font-bold mb-6">Ready to Experience the Difference?</h3>
+  <button onclick="orderSample()" class="bg-white text-gray-800 px-8 py-3 rounded-full shadow-md font-semibold hover:bg-gray-200 transition-transform transform hover:scale-105">Get Your Free Sample</button>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 text-center py-6 mt-12">
+  <p>&copy; 2025 Violet Keystone. All rights reserved.</p>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
